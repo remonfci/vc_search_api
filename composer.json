@@ -1,0 +1,44 @@
+{
+    "name": "version_control_search_api",
+    "description": "REST Api to search inside version control public repos",
+    "keywords": ["version control", "git", "search", "restful"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Remon Adel",
+            "email": "r.naeem.fcih@gmail.com",
+            "homepage": "https://github.com/remonfci"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "rmccue/requests": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0",
+        "zendframework/zend-coding-standard": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Api\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit",
+        "cs-check": "phpcs --standard=PSR2",
+        "cs-fix": "phpcbf --standard=PSR2"
+    }
+
+}
