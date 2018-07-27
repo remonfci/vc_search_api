@@ -2,7 +2,6 @@
 
 namespace Api\Domain\Entity;
 
-
 /**
  * Class File
  *

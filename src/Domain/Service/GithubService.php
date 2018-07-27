@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 namespace Api\Domain\Service;
+
 use Api\Domain\Repository\GithubRepository;
 
 /**

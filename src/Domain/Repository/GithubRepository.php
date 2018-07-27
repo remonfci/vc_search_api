@@ -5,7 +5,6 @@ namespace Api\Domain\Repository;
 
 use Api\Domain\Entity\File;
 
-
 /**
  * Class GithubRepository
  *
